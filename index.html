@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Ardan</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <a class="w3-bar-item w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" 
+    onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <marquee><b href="#" class="w3-bar-item w3-button w3-text-black w3-padding-large">WEBSITE BIODATA ARDN, TUGAS AKHIR CODING (Kayaknya)<b></marquee>
+      </div>
+    </div>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<title>TUGAS</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+</head>
+<body>
+	<nav class="navbar">
+        <ul>
+            <li class="nav-text">
+                <a href="#" class="active">Home</a>
+                <a href="#tentang">BIODATA</a>
+                <a href="#hobi">Hobi</a>
+				<a href="#games">Games</a>
+                <a href="#kontak">Kontak</a>
+            </li>
+        </ul>
+    </nav>
+	<header class="banner">
+		<!-- masukkan foto diri pada bagian src di img-->
+        <img src="https://i.pinimg.com/564x/49/62/ee/4962ee8228258c179a707f7371a08d2b.jpg" alt="profilepic" class="profilepic">
+        <h2 class="kataPengantar">Halo semuanya! Nama saya</h2>
+        <h1 class="kataPengantar" id="namaUtama"></h1>
+
+		<script>
+		var i = 0;
+		// masukkan nama pada variable "nama" di bawah
+		var nama = 'Ardan Ramizah';
+		var speed = 100;
+
+		function typeWriter() {
+		if (i < nama.length) {
+			document.getElementById("namaUtama").innerHTML += nama.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		}
+		}
+		typeWriter();
+		</script>
+    </header>
+	<article>
+		<section id="tentang">
+            <h1 class="judul">Tentang Saya</h1>
+            <p class="isi">
+				<!-- masukkan nama, umur, hobi, dan cita-cita pada field dengan kurung siku [] di bawah-->
+                Saya Ardan. Saya berumur 13. Saya bersekolah di SMP Al-Hikmah Surabaya. Saya suka 3D Modelling, Design, dan Coding(LUA). Saya bercita-cita ingin menjadi seorang CEO Perusahaan Distribusi.
+            </p>
+        </section>
+		<section id="biodata">
+			<h1 class="judul">Biodata</h1>
+			<div class="bio">
+				<div class="data">
+					<h2>Nama Lengkap</h2>
+					<h2>Umur</h2>
+					<h2>Kelas</h2>
+					<h2>E-mail</h2>
+				</div>
+				<div class="dataBio">
+					<!-- masukkan nama, umur, kelas, dan email pada field dengan kurung siku [] di bawah-->
+					<h2>Ardan Ramizah</h2>
+					<h2>13</h2>
+					<h2>8A</h2>
+					<h2>Honbard@gmail.com</h2>
+				</div>
+			</div>
+        </section>
+		<section id="hobi">
+			<h1 class="judul">Hobi</h1>
+			<div class="hobiku">
+				<!-- masukkan gambar hobi di sini dengan mengcopy div di bawah, ganti src dan h2 untuk nama hobi -->
+				<div>
+					<img src="https://www.lightmap.co.uk/dynamic_resources/blog_post_content/2416/image.jpg?1599212772" alt="">
+					<h2>3D Modelling</h2>
+				</div>
+				<div>
+					<img src="https://ncube-digest.com/wp-content/uploads/2020/02/Top-8-Software-Development-Models.jpg" alt="">
+					<h2>Coding (LUA,PHYTON,DSB)</h2>
+				</div>
+				<div>
+					<img src="https://media.gcflearnfree.org/content/55e0914924929be0279509cf_05_29_2014/start_intro_flower.jpg" alt="">
+					<h2>Designing</h2>
+				</div>
+			</div>
+		</section>
+		<section id="games">
+			<h1 class="judul">Games Favoritku</h1>
+			<div class="gamesku">
+				<div class="slide-container swiper">
+					<div class="slide-content">
+						<div class="card-wrapper swiper-wrapper">
+							<!-- tambahkan game di sini dengan mengcopy div card swiper-slide di bawah, ganti src untuk link gambar game, ubah name dan description untuk game yang dimasukkan -->
+							<div class="card swiper-slide">
+								<div class="image-content">
+									<span class="overlay"></span>
+		
+									<div class="card-image">
+									   <img src="https://yt3.googleusercontent.com/_DiGCcjGwJQAZ3zmlyB8TCYuA8O9tDJ9zGNysq5sR0rxwYb6SP5fW8cb3LbfcRwfui0m27oIhA=s900-c-k-c0x00ffffff-no-rj" alt="" class="card-img">
+									</div>
+								</div>
+		
+								<div class="card-content">
+									<h2 class="name">Minecarft</h2>
+									<p class="description">Minecraft adalah sebuah permainan sandbox yang dikembangkan oleh pengembang permainan asal Swedia Mojang Studios. Permainan ini dibuat oleh Markus "Notch" Persson dalam bahasa pemrograman Java.</p>
+		
+									<button class="button">View More</button>
+								</div>
+							</div>
+							<div class="card swiper-slide">
+								<div class="image-content">
+									<span class="overlay"></span>
+		
+									<div class="card-image">
+										   <img src="https://i0.wp.com/esportsnesia.com/wp-content/uploads/2021/01/Apa-Itu-Growtopia-1.jpg" alt="" class="card-img">
+									</div>
+								</div>
+		
+								<div class="card-content">
+									<h2 class="name">Growtopia</h2>
+									<p class="description">Growtopia adalah permainan video MMO yang dijalankan oleh server di mana pemain dapat mengobrol, bertani, menambah teman, berdagang, membangun dunia, dan PVP.</p>
+		
+									<button class="button">View More</button>
+								</div>
+							</div>
+							<div class="card swiper-slide">
+								<div class="image-content">
+									<span class="overlay"></span>
+		
+									<div class="card-image">
+										 <img src="https://datawiz.ca/wp-content/uploads/2021/12/roblox-studio-how-to-create-roblox-games-roblox-studio-logo.jpeg" alt="" class="card-img">
+									</div>
+								</div>
+		
+								<div class="card-content">
+									<h2 class="name">Roblox Studio</h2>
+									<p class="description">Roblox studio merupakan Studio dari game Roblox.</p>
+		
+									<button class="button">View More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-navBtn"></div>
+					<div class="swiper-button-prev swiper-navBtn"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section id="kontak">
+			<h1 class="judul">Kirim Pesan Pada Saya!</h1>
+            <form action="#" class="formKontak">
+				<div>
+					<div class="my-2">
+						<h4>Nama:</h4>
+						<input type="text" placeholder="Nama . . ." class="fieldInput">
+					</div>
+					<div class="my-2">
+						<h4>Email:</h4>
+						<input type="email" placeholder="Email . . ." class="fieldInput">
+					</div>
+					<div class="my-2">
+						<h4>Subjek:</h4>
+						<input type="text" placeholder="Subjek email . . ." class="fieldInput">
+					</div>
+					<div class="my-2">
+						<h4>Pesan:</h4>
+						<textarea type="textarea" placeholder="Pesan . . ." cols="53" rows="8" class="fieldInput"></textarea>
+					</div>
+				</div>
+                <input type="submit" value="Send" class="buttonKirim">
+            </form>
+		</section>
+	</article>
+
+	<footer class="px-8 py-8">
+        <h4 class="footer">Kontak saya:</h4>
+        <div class="kontak">
+			<!-- masukkan gambar sosial media yang diinginkan dengan megcopy 1 line di bawah, ganti src dengan logo sosial media dan href dengan link profile sosial media kalian-->
+            <a href="https://discordapp.com/users/888402413676011530"><img src="https://images-eds-ssl.xboxlive.com/image?url=Q_rwcVSTCIytJ0KOzcjWTYl.n38D8jlKWXJx7NRJmQKBAEDCgtTAQ0JS02UoaiwRCHTTX1RAopljdoYpOaNfVf5nBNvbwGfyR5n4DAs0DsOwxSO9puiT_GgKqinHT8HsW8VYeiiuU1IG3jY69EhnsQ--&format=source" class="icon" alt="discord"></a>
+			<a href="https://www.instagram.com/ar_daann/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" class="icon" alt="instagram"></a>
+		</div>
+    </footer>
+</body>
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
